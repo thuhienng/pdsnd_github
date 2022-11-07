@@ -1,8 +1,9 @@
+#import lib
 import time
 import pandas as pd
 import numpy as np
 
-CITY_DATA = { 'chicago': 'chicago.csv',
+city_data = { 'chicago': 'chicago.csv',
               'new york city': 'new_york_city.csv',
               'washington': 'washington.csv' }
 
@@ -60,7 +61,7 @@ def load_data(city, month, day):
         df - Pandas DataFrame containing city data filtered by month and day
     """
     #load data into frame
-    df = pd.read_csv(CITY_DATA[city])
+    df = pd.read_csv(city_data[city])
     
     #convert Start Time to datetime type
     df['Start Time'] = pd.to_datetime(df['Start Time'])

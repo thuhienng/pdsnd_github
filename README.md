@@ -14,4 +14,4 @@ A terminal application (Terminal on Mac and Linux or Cygwin on Windows).
 
 ### Credits
 Python libraries
-Guidline from Udacity
+Guideline from Udacity
